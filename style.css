@@ -8,3 +8,76 @@ body {
 }
 
 /* ---------------------------------------------------- */
+
+h1 {
+	text-align: center;
+}
+
+
+/* styl jednotlivých lidí */
+
+.osoba {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 25px;
+	margin: 10px;
+	border: solid thin gray;
+	border-radius: 25px;
+	box-shadow: 0 3px 5px -2px gray;
+}
+
+img{
+	border-radius: 50%;
+}
+
+.popis {
+	text-align: center;
+}
+
+/* rozložení stránky */
+
+.tým {
+	display: flex;
+	flex-direction: column;
+}
+
+/* tabletové rozhraní */
+
+@media (min-width: 540px) and (max-width: 960px) {
+
+	.tým {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.osoba {
+		flex-direction: row;
+		flex-grow: 1;
+		flex-basis: 0;
+	}
+
+	img {
+		margin: 0 20px 0 0;
+	}
+
+	.popis {
+		text-align: left;
+	}
+
+}
+
+/* webové rozhraní */
+
+@media (min-width: 960px) {
+
+	.tým {
+		flex-direction: row;
+	}
+
+	.osoba {
+		flex-grow: 1;
+		flex-basis: 0;
+	}
+
+}
