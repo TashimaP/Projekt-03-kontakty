@@ -22,9 +22,9 @@ h1 {
 	align-items: center;
 	padding: 25px;
 	margin: 10px;
-	border: solid thin gray;
+	border: solid thin rgb(199, 199, 199);
 	border-radius: 25px;
-	box-shadow: 0 3px 5px -2px gray;
+	box-shadow: 0 3px 5px -2px rgb(128, 230, 255);
 }
 
 img{
